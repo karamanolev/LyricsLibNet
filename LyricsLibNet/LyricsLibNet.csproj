@@ -45,6 +45,7 @@
     <Compile Include="Providers\AzLyricsProvider.cs" />
     <Compile Include="Providers\ChartLyricsProvider.cs" />
     <Compile Include="Providers\LyricsComProvider.cs" />
+    <Compile Include="Providers\WikiaLyricsProvider.cs" />
     <Compile Include="ResultAvailableEventArgs.cs" />
     <Compile Include="StringHelper.cs" />
   </ItemGroup>
