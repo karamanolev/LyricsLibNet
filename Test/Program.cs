@@ -12,9 +12,9 @@ namespace Test
         {
             AutoResetEvent autoEvent = new AutoResetEvent(false);
 
-            LyricsFinder finder = new LyricsFinder("Marillion", "He Knows You Know");
+            LyricsFinder finder = new LyricsFinder("Supertramp", "It Doesn't Matter");
             finder.ClearProviders();
-            finder.AddProvider(new LyricsComProvider());
+            finder.AddProvider(new WikiaLyricsProvider());
             finder.ResultAvailable += (sender, e) =>
             {
                 Console.WriteLine(e.Result.Artist + " " + e.Result.TrackTitle + " : " + e.Result.Text.Substring(0, 40).Replace("\r\n", ""));
